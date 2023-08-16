@@ -1,0 +1,7 @@
+sudo docker build -t webapp .
+  
+sudo az acr login --name localregistry23 --username localregistry23 --password 7UsdI0ZfXUx7PtMCi3ToWQXzzmtYwHdbKKPLK4QO3o+ACRBlbS49
+
+sudo docker tag webapp localregistry23.azurecr.io/webapp
+
+sudo docker push localregistry23.azurecr.io/webappcmds
